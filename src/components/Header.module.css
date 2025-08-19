@@ -1,0 +1,3 @@
+.title { font-weight: 600; }
+.user { display:flex; gap:8px; align-items:center; }
+.email { font-size:.85rem; opacity:.8; }
