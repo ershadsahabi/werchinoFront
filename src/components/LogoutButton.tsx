@@ -8,5 +8,5 @@ export default function LogoutButton() {
   async function onClick(){
     try { await postWithCsrf(endpoints.logout, {}); r.refresh(); } catch {}
   }
-  return <button className="btn" onClick={onClick}>Logout</button>;
+  return <button className="btn" onClick={onClick}>خروج</button>;
 }

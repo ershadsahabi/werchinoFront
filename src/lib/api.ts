@@ -2,13 +2,17 @@
 export const API_BASE = (process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8000').replace(/\/$/, '');
 
 export const endpoints = {
+  // Auth
   csrf: `${API_BASE}/api/accounts/csrf/`,
   register: `${API_BASE}/api/accounts/register/`,
   login: `${API_BASE}/api/accounts/login/`,
   logout: `${API_BASE}/api/accounts/logout/`,
   me: `${API_BASE}/api/accounts/me/`,
 
-  // محتوا
+  // Home (اپ جدید بک‌اند)
+  home: `${API_BASE}/api/home/`,
+
+  // محتوا (در صورت استفاده در جاهای دیگر)
   page: (slug: string) => `${API_BASE}/api/site/pages/${slug}/`,
   services: `${API_BASE}/api/site/services/`,
   pricing: `${API_BASE}/api/site/pricing/`,
